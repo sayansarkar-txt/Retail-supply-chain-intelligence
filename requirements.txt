@@ -1,6 +1,7 @@
 pandas
 numpy
-streamlit
+streamlit==1.28.0
+altair==4.2.2
 plotly
 scikit-learn
 xgboost
