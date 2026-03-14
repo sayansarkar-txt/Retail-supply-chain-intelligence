@@ -1,0 +1,11 @@
+data/raw/
+data/processed/
+models/*.pkl
+*.pyc
+__pycache__/
+.env
+*.egg-info/
+.DS_Store
+venv/
+.vscode/
+*.ipynb_checkpoints/
