@@ -98,10 +98,15 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-if "Overview"  in view: from views.overview         import render
-elif "Forecast" in view: from views.demand_forecast  import render
-elif "Risk"     in view: from views.stockout_risk    import render
-elif "Alert"    in view: from views.alert_center     import render
-else:                    from views.product_analysis import render
+if "Overview" in view:
+    from views.overview import render
+elif "Forecast" in view:
+    from views.demand_forecast import render
+elif "Risk" in view:
+    from views.stockout_risk import render
+elif "Alert" in view:
+    from views.alert_center import render
+else:
+    from views.product_analysis import render
 
 render()
