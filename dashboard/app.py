@@ -5,7 +5,7 @@
 import streamlit as st
 import sys, os
 
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, "/home/adminuser/venv/lib/python3.14/site-packages")
 
 st.set_page_config(
     page_title="Supply Chain Intelligence",
